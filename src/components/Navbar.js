@@ -18,7 +18,7 @@ const links = [
     },
     {
         name: info.initials,
-        type: 'initials',
+        type: 'Initials',
         to: '/',
         active: 'home'
     },
@@ -26,6 +26,10 @@ const links = [
         name: 'Portfolio',
         to: '/portfolio',
         active: 'portfolio'
+    },{
+        name: 'Contact',
+        to: '/contact',
+        active: 'contact'
     }
 ]
 
@@ -34,10 +38,10 @@ export default function Navbar({darkMode, handleClick}) {
     const [active, setActive] = useState(location.pathname === '/' ? 'home' : location.pathname.slice(1, location.pathname.length));
 
     return (
-        <Box component={'nav'} width={'100%'}>
+        <Box component={'nav'} width={'100%'} >
             <Box component={'ul'} display={'flex'} justifyContent={'center'} alignItems={'center'}
                  gap={{xs: '2rem', md: '8rem'}}
-                 textTransform={'lowercase'} fontSize={'1rem'}>
+                  fontSize={'1.25rem'}>
                 {links.map((link, index) => (
                     <Box key={index} component={'li'} className={(link.active === active && !link.type) && Style.active}
                          sx={{borderImageSource: info.gradient}}>
@@ -47,9 +51,9 @@ export default function Navbar({darkMode, handleClick}) {
                         </Link>
                     </Box>
                 ))}
-                <li>
-                    <Toggler darkMode={darkMode} handleClick={handleClick}/>
-                </li>
+              {/* <li>
+                   } <Toggler darkMode={darkMode} handleClick={handleClick}/> 
+                </li>*/}
             </Box>
         </Box>
     )
