@@ -4,13 +4,13 @@
 
 ![screenshot](https://user-images.githubusercontent.com/18350557/176953627-cd79fe83-0b84-4082-b79e-cc88da28f2e1.png)
 
-[View Live Template](https://reactportfoliotemplate.paytonpierce.dev/) | [View Live Example](https://paytonpierce.dev/)
+[View Live Template](https://reactportfoliotemplate.paytonpierce.dev/)
 
 ## features
 
 🌑 Dark Mode Toggler
 
-📖 Multi-Page Layout
+📖 Multiple Pages (React Router)
 
 📱 Fully Responsive
 
@@ -35,7 +35,7 @@
 ## how to use
 
 - fork the repository and clone locally
-- run `npm install` to install dependencies
+- cd into the project and run `npm install` to install dependencies
 - once installation is complete, run `npm run start` to get your local copy running in the browser.
 
 ## template instructions
@@ -49,7 +49,9 @@
 
 - add an image of yourself with the background removed, and cropped into a square. i know this seems picky, but the
   template is set up in a way that this is how it will look best :) I recommend using https://remove.bg to remove the
-  background from your image. Once you add it to this img folder, rename it to `self.png` (delete the old self.png so
+  background from your image. If this website wants to charge you for some reason, try searching "Remove Background AI"
+  on Google, there are some free ones there :)
+- Once you add it to this img folder, rename it to `self.png` (delete the old self.png so
   yours replaces it)
 - if background removal is not an option for you, any image you use will automatically be made into a circle. for this
   reason, square images without too tall of an aspect-ratio work best.
@@ -65,8 +67,7 @@
 
 - add to the `img` folder up to 5 screenshots of projects you have completed to be added to your portfolio page. this
   can either be a regular screenshot, or you can create mockups like what are on the default template. I created these
-  in Canva -- if you would like help with creating them for your own projects, feel free to message me
-  on [Twitter](https://twitter.com/paytoncodes) and I will happily help you make them :)
+  in Canva -- At the bottom of this readme is instructions to create them yourself! 
 
 example: ![](http://localhost:3000/static/media/mock5.7a3de7b6c7393f774688.png)
 
@@ -106,13 +107,17 @@ Otherwise, use [Emojipedia](https://emojipedia.org/) to find and copy-paste what
 
 For the 'socials' section, be sure to replace the links with your own social profile links.
 
-For the 'portfolio' section, update the titles to whatever you want. The `live` link should be a link to the **live demo** of your project. The `source` link should be a link to the **repository where the *code* of the project is hosted**, such as GitHub.
+For the 'portfolio' section, update the titles to whatever you want. The `live` link should be a link to the **live demo** of your project. The `source` link should be a link to the **repository where the *code* of the project is hosted**,
+such as GitHub.
 
-Note: If you have more than 5 projects, you will need to add more objects to the portfolio array. Just copy from the opening bracket to the comma of *one* object and continue pasting as many as you need. If you need help with this, feel free to reach out.
+Note: If you have more than 5 projects, you will need to add more objects to the portfolio array. Just copy from the
+opening bracket to the comma of *one* object and continue pasting as many as you need. If you need help with this, feel
+free to reach out.
 
-And that's it! If you save the file and check your live server, you should see that the information has been updated and the portfolio has been customized. 
+And that's it! If you save the file and check your live server, you should see that the information has been updated and
+the portfolio has been customized.
 
-Now, you can commit and push your changes to your forked repository, and deploy however you like. 
+Now, you can commit and push your changes to your forked repository, and deploy however you like.
 
 ---
 
@@ -124,7 +129,8 @@ If you have any questions or issues with the setup process, feel free to contact
 
 Or, use this repo and post an "issue" :)
 
-All that I ask is that you please credit me for the template :) If you'd like to remove the credit from the bottom of the site, go for it, just link my profile somewhere in your ReadMe when you deploy, or wherever.
+All that I ask is that you please credit me for the template :) If you'd like to remove the credit from the bottom of
+the site, go for it, just link my profile somewhere in your ReadMe when you deploy, or wherever.
 
 .•° ✿ °•.
 
@@ -140,18 +146,71 @@ please don't hesitate to reach out -- I will always happily accept constructive 
 
 ---
 
+### How to create project mock-ups in Canva
+
+You must have a Canva account for this to work! If you don't want to create one, feel free to send me laptop and mobile sized screenshots of your projects and I will make some mocks for you! It just might take a couple days to get to them. My contact info can be found on my Github profile or in this readme. Feel free to contact via Twitter or email, or to open an issue on this project.
+
+Now, then!
+
+The easiest way is to click on [this link](https://www.canva.com/design/DAEi4hwD8KM/YF6znvnVBGeR1p_KujaTwA/edit?utm_content=DAEi4hwD8KM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) and edit with the desktop and mobile views of your project. 
+
+1. Double-click the "computer" screen in the mockup linked above, and click "delete" on your keyboard to remove it. Do the same with the screenshot that is in mobile. Once completed, it should look like this: 
+![image](https://user-images.githubusercontent.com/18350557/213895660-11caf808-e929-4569-b404-92ff742bb3ff.png)
+
+2. On the left sidebar, click "uploads" and then "upload files" to upload your screenshots of your own project (get one for desktop view and one for mobile view)
+
+3. Drag those screenshots into the appropriate frames, replacing the cloud-and-sky background. It should snap right in.
+
+4. Finally, at the top right corner, click on the "Share" button and then "Download" -- set the file type to PNG, and then download. If you have Canva Premium, you can do this with a transparent background. If not, remove the background yourself using either a photo editor like Photopea, or an AI background remover (just google it, you can usually use them for free a few times). 
+
+5. These are the images you will want to put in the img/ folder of the project and name "mock1" "mock2" etc. etc. Hope this helps! 
+
+---
+
 ##### examples of people using this template!
 
-[1](https://atramucsd.github.io/My-Website/#/)
+[Alan Tram](https://atramucsd.github.io/My-Website/#/)
 
-[2](https://irfanbalghari.netlify.app/)
+[Irfan Balghari](https://irfanbalghari.netlify.app/)
 
-[3](https://karasakalmt.dev/)
+[Mete Karasakal](https://karasakalmt.dev/)
 
-[4](https://needon.kr/#/)
+[Igor Nascimento](https://inascim.github.io/)
 
-[5](https://inascim.github.io/)
+[Austin](https://ellerman4.github.io/)
 
-[6](https://www.keyrxng.xyz/)
+[Anshu Sharma](https://anshu-sharma.netlify.app/)
 
-[7](https://ellerman4.github.io/ellerman4_portfolio/)
+[Humberto Dutra](https://humbertodutra.github.io/)
+
+[Mehmet Zorlu](https://mehmetzorlu07.github.io/Portfolio/)
+
+[Antti Tamminen](https://react-portfolio-template-41210wtc0-paytonjewell.vercel.app/)
+
+[Joseph A. Sangine](https://josephanthonysangine.com/)
+
+[Andrew VanOver](https://lustrous-bavarois-5a9a5e.netlify.app/)
+
+[Luca Martinelli](https://www.lucamartinelli.dev/)
+
+[Eugene](https://knst.me/)
+
+[Ajan JaiRam](https://ajanjairam.github.io/)
+
+[Leo Souquet](https://leosouquet.com/)
+
+[Bahrul Ulum](http://bahrulum.site/)
+
+[Pedro Fontes](https://pedrofontes.me/)
+
+[Laísa Rio](https://laisario.github.io/)
+
+[Akshay Mattoo](https://akshaymattoo.com/)
+
+[Alwin Ning](https://alwin-website.vercel.app/)
+
+[Hyun Woo](https://needon.kr/)
+
+[Dirk Kotze](https://dirkrkotze.com/)
+
+[Iuliia Sutygina](https://juliasut.github.io/portfolio/)

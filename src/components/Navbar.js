@@ -1,19 +1,21 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Style from './Navbar.module.scss';
 import Toggler from "./home/Toggler";
-import {Link, useLocation} from "react-router-dom";
-import {Box} from "@mui/material";
-import {info} from "../info/Info";
+import { useLocation } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
+import { Box } from "@mui/material";
+import { info } from "../info/Info";
+import { singlePage } from '../info/Info';
 
 const links = [
     {
         name: 'Home',
-        to: '/',
+        to: '',
         active: 'home'
     },
     {
         name: 'About Me',
-        to: '/about',
+        to: 'about',
         active: 'about'
     },
     {
@@ -24,7 +26,7 @@ const links = [
     },
     {
         name: 'Portfolio',
-        to: '/portfolio',
+        to: 'portfolio',
         active: 'portfolio'
     },{
         name: 'Contact',
@@ -44,9 +46,12 @@ export default function Navbar({darkMode, handleClick}) {
                   fontSize={'1.25rem'}>
                 {links.map((link, index) => (
                     <Box key={index} component={'li'} className={(link.active === active && !link.type) && Style.active}
-                         sx={{borderImageSource: info.gradient}}>
-                        <Link to={link.to} onClick={() => setActive(link.active)}>
-                            {!link.type && <p style={{paddingBottom: '0.5rem'}}>{link.name}</p>}
+                        sx={{ borderImageSource: info.gradient }}>
+                        <Link to={singlePage ? `#${link.to}` : `/${link.to}`}
+                        scroll={el => scrollWidthOffset(el)}
+                            smooth
+                            onClick={() => setActive(link.active)} className={Style.link}>
+                            {!link.type && <p style={{ padding: '0.5rem 0' }}>{link.name}</p>}
                             {link.type && <h1>{link.name}</h1>}
                         </Link>
                     </Box>
