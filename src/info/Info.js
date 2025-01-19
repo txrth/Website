@@ -52,7 +52,7 @@ export const info = {
         },
         {
             emoji: '🎓',
-            text: '3rd year'
+            text: '5th year'
         },
         {
             emoji: "🏫",
